@@ -1,0 +1,26 @@
+def encrypt(text, shift):
+    result= ""
+    for character in text:
+        if character.isalpha():
+            alpha=ord('A') if character.isupper() else ord('a')
+            shifted=(ord(character)-alpha+shift)%26+alpha
+            result+=chr(shifted)
+        else:
+            result+=character
+    return result
+def decrypt(text, shift):
+    return encrypt(text, -shift)
+
+#User Input
+print("=== Caesar Cipher Tool ===")
+text=input("Enter Your Message: ")
+shift=int(input("Enter Your Shift Value: "))
+
+#Encryption
+encrypted_text = encrypt(text, shift)
+print("Encrypted:", encrypted_text)
+
+#Decryption
+decrypted_text = decrypt(encrypted_text, shift)
+print("Decrypted:", decrypted_text)
+
