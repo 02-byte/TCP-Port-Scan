@@ -1,3 +1,5 @@
+#Caesar Cipher
+
 The Caesar cipher is a simple substitution cipher where each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. It is a type of shift cipher, famously used by Julius Caesar with a shift of three, where 'A' becomes 'D' and 'B' becomes 'E'. The Caesar cipher is one of the simplest and oldest encryption techniques in Cryptography. It’s a type of substitution cipher where each letter in a message is shifted a fixed number of places down (or up) the alphabet.
 How it Works:
 •	You choose a number called the shift.
